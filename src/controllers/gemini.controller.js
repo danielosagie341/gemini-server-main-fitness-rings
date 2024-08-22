@@ -17,7 +17,7 @@ exports.sendResponse = catchAsync(async (req, res, next) => {
         }
 
         const model = generativeAI.getGenerativeModel({  model: "gemini-1.5-flash",
-        systemInstruction:"your name is harry and your are a crypto expert that answers only crypto related questions."})
+        systemInstruction:"your name is smart health health assistant and your are a medical health expert that answers only human health, exercise and medicine related questions."})
 
         const chat = model.startChat({
             History: history,
